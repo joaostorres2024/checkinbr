@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Galano Grotesque Alt';
+  src: url('galano-regular.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Galano Grotesque Alt';
+}
+
+.a-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 100px;
+    -webkit-box-shadow: 1px 5px 20px -8px rgba(0,0,0,0.3); 
+    box-shadow: 1px 5px 20px -8px rgba(0,0,0,0.3);
+}
+
+#logo-cabecalho{
+    margin-top: 5px;
+    width: 120px;
+}
+
+.menu-ul{
+    font-size: 16px;
+    font-weight: 500;
+    gap: 20px;
+    flex-direction: row;
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.botao-perfil{
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    height: 34px;
+    width: 100px;
+}
+
+.botao-perfil:hover{
+    background-color: #2e2e2e;
+}
+
+.principal-container{
+    gap: 30px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    background-image: url(/img/MarinaFlatBG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.isotipo-branco{
+    margin-top: -60px;
+    width: 50px;
+}
+
+.h1-principal{
+    max-width: 86%;
+    line-height: 76px;
+    font-size: 76px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.p-principal{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    max-width: 60%;
+}
+
+.cards-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 680px;
+    width: 100%;
+    padding: 0 150px;
+    gap: 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+   
+}
+
+.cards{
+    border-radius: 20px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 5px 10px -8px rgba(0,0,0,0.9);
+}
+
+.h1-cards{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.p-cards{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.p2-cards{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.marrom{
+    font-size: 30px;
+    color: #8D6049;
+}
+
+.hospedagens-container{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    padding: 0px 100px;
+}
+
+.hospedagens-texto-container{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.em-alta{
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 130px;
+    height: 30px;
+    background-color: #0296B2;
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+
+.cards-hospedagens-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.cards-hospedagens{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 5px 20px -8px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+.imagem-card-hospedagens{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.p-cards-hospedagens{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.localizacao{
+    gap: 5px;
+    align-items: center;
+    display: flex;
+}
+
+.p-localizacao{
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.icone-localizacao{
+    margin-left: -3px;
+    width: 20px;
+}
+
+.preco{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cinza{
+    font-weight: 400;
+    color: #797979;
+}
+
+.icone-estrela{
+    width: 20px;
+}
+
+.preco-avaliacao{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avaliacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
