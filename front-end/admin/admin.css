@@ -1,0 +1,87 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+@font-face {
+  font-family: 'Galano Grotesque Alt';
+  src: url('galano-regular.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Galano Grotesque Alt';
+}
+
+.a-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.cabecalho-container{
+    background-color: #0296B2;
+    padding: 15px 50px;
+}
+
+.pesquisa-menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px 0;
+}
+
+.h1-checkinbr{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.p-pesquisa-menu{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.p2-pesquisa-menu{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pesquisa{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    height: 26px;
+    width: 300px;
+}
+
+.nav-menu-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.card-menu{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-menu{
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.titulo-menu{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.titulo2-menu{
+    font-size: 14px;
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+@font-face {
+  font-family: 'Galano Grotesque Alt';
+  src: url('galano-regular.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Galano Grotesque Alt';
+}
+
+.a-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.cabecalho-container{
+    background-color: #0296B2;
+    padding: 15px 50px;
+}
+
+.pesquisa-menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px 0;
+}
+
+.h1-checkinbr{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.novo-anuncio-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 50px;
+}
+
+.adcionar-fotos{
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.fotos{
+    height: 90px;
+    background-color: #cacaca;
+}
+
+#input-nome-do-anuncio{
+    width: 300px;
+    padding: 5px;
+}
+
+#input-localizacao-escrito{
+    width: 400px;
+    padding: 5px;
+}
+
+#input-estrelas-avaliacao{
+    width: 300px;
+    padding: 5px;
+}
+
+#input-descricao-curta{
+    resize: none;
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+}
+
+#input-descricao-livre{
+    resize: none;
+    width: 500px;
+    height: 200px;
+    padding: 5px;
+}
+
+#input-icones{
+    width: 300px;
+    padding: 5px;
+}
+
+#input-valor{
+    width: 300px;
+    padding: 5px;
+}
+
+#input-localizacao-link{
+    width: 400px;
+    padding: 5px;
+}
+
+#input-calendario{
+    width: 300px;
+    padding: 5px;
+}
+
+#botao-bloquear-datas{
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: rgb(249, 79, 79);
+}
+
+#botao-desbloquear-datas{
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: rgb(0, 182, 21);
+}
+
+#botao-voltar{
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: rgb(249, 79, 79);
+}
+
+#botao-aplicar{
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: #0296B2;
+}
+
+#botao-sair{
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: rgb(0, 182, 21);
+}
