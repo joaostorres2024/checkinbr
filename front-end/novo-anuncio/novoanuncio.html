@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/front-end//novo-anuncio/novoanuncio.css">
+    <link rel="stylesheet" href="/novo-anuncio/novoanuncio.css">
     <title>CheckinBR Administrator Manager</title>
 </head>
 <body>
@@ -28,13 +28,13 @@
                     <div class="fotos"></div>
                     <div class="fotos"></div>
                     <div class="fotos"></div>
-                    <button id="adicionar-fotos-botao">Adicionar Fotos</button>
+                    <input name="imagens" id="adicionar-fotos-botao" type="text"placeholder="add imagem">>Adicionar Fotos</button>
                 </div>
-                <input id="input-nome-do-anuncio" type="text" placeholder="Nome do anúncio">
-                <input id="input-localizacao-escrito" type="text" placeholder="Localização por escrito">
-                <input id="input-estrelas-avaliacao" type="number" name="" id="" placeholder="Estrelas de avaliação">
-                <textarea id="input-descricao-curta" name="" id="" placeholder="Descrição curta"></textarea>
-                <textarea id="input-descricao-livre" name="" id="" placeholder="Descrição livre"></textarea>
+                <input name="nome_do_anuncio" id="input-nome-do-anuncio" type="text" placeholder="Nome do anúncio">
+                <input name="localizacao" id="input-localizacao-escrito" type="text" placeholder="Localização por escrito">
+                <input name="estrelas" id="input-estrelas-avaliacao" type="number"  id="" placeholder="Estrelas de avaliação">
+                <textarea name="descricao_rapida" id="input-descricao-curta"  id="" placeholder="Descrição curta"></textarea>
+                <textarea name="descricao_detalhada" id="input-descricao-livre" id="" placeholder="Descrição livre"></textarea>
                 <select name="input-icones" id="input-icones">
                     <option value="input-icones">Ícones</option>
                     <option value="input-icones">Teste</option>
@@ -45,20 +45,21 @@
                     <option value="input-icones">Teste</option>
                     <option value="input-icones">Teste</option>
                 </select>
-                <input id="input-valor" type="number" name="" id="" placeholder="Valor por noite">
+                <input name="valor" id="input-valor" type="number"  id="" placeholder="Valor por noite">
                 <input id="input-localizacao-link" type="text" placeholder="Localização (Link)">
-                <input id="input-calendario" type="date" name="" id="">
+                <input name="localizacao_link" id="input-calendario" type="date" id="">
                 <div>
                     <button id="botao-bloquear-datas">Bloquear data</button>
                     <button id="botao-desbloquear-datas">Desbloquear data</button>
                 </div>
                 <div>
                     <button id="botao-voltar">Voltar</button>
-                    <button id="botao-aplicar">Aplicar</button>
+                    <button id="submit">Aplicar</button>
                     <button id="botao-sair">Sair</button>
                 </div>
             </div>
         </section>
     </main>
 </body>
+<script src="novoanuncio.js"></script>
 </html>
