@@ -1,15 +1,15 @@
-class anuncio {
-    constructor(id, imagens, nome, localizacao, estrelas, descricaoRapida, descricaoDetalhada, valor, localizacaoLink) {
+class Anuncio {
+    constructor(id, imagens, nome_do_anuncio, localizacao, estrelas, descricao_rapida, descricao_detalhada, valor, localizacao_link) {
         this.id = id;
         this.imagens = imagens;
-        this.nome = nome;
+        this.nome_do_anuncio = nome_do_anuncio;
         this.localizacao = localizacao;
         this.estrelas = estrelas;
-        this.descricaoRapida = descricaoRapida;
-        this.descricaoDetalhada = descricaoDetalhada;
+        this.descricao_rapida = descricao_rapida;
+        this.descricao_detalhada = descricao_detalhada;
         this.valor = valor;
-        this.localizacaoLink = localizacaoLink;
+        this.localizacao_link = localizacao_link;
     }
 }
 
-module.exports = anuncio;
+module.exports = Anuncio;
