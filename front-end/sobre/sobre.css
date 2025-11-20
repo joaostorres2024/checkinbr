@@ -1,4 +1,4 @@
-
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
 
 *{
     scroll-behavior: smooth;
@@ -9,6 +9,7 @@
 }
 
 .a-link{
+  max-width: min-content;
     text-decoration: none;
     color: inherit;
 }
