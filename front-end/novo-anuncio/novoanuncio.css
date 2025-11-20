@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+@font-face {
+  font-family: 'Galano Grotesque Alt';
+  src: url('galano-regular.woff2') format('woff2');
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Galano Grotesque Alt';
 }
 
 .a-link{
@@ -14,7 +19,11 @@
 
 .cabecalho-container{
     background-color: #0296B2;
-    padding: 15px 50px;
+    padding: 5px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .pesquisa-menu-container{
@@ -22,6 +31,11 @@
     flex-direction: column;
     gap: 5px;
     padding: 50px 0;
+}
+
+.icone-voltar{
+    margin-top: 5px;
+    width: 30px;
 }
 
 .h1-checkinbr{
@@ -83,6 +97,16 @@
     padding: 5px;
 }
 
+.icones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botao-adicionar{
+    width: 100px;
+}
+
 #input-valor{
     width: 300px;
     padding: 5px;
@@ -116,7 +140,7 @@
     background-color: rgb(249, 79, 79);
 }
 
-#botao-aplicar{
+.botao-aplicar{
     padding: 5px;
     color: #FFFFFF;
     background-color: #0296B2;

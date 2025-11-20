@@ -1,27 +1,23 @@
+async function updateAnnouncement() {
+    const response = await fetch("/api/anuncios");
+    const anuncios = await response.json();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".h1-cards");
-  const speed = 100;
+    const lista = document.getElementById("bdInformations");
 
-  counters.forEach(counter => {
-    const spanPrefix = counter.querySelector("span.marrom"); // pega o span
-    const originalText = counter.innerHTML;
-    const finalValue = parseInt(originalText.replace(/\D/g, "")); // só números
-    const prefix = spanPrefix && originalText.indexOf(spanPrefix.outerHTML) === 0 ? spanPrefix.outerHTML : "";
-    const suffix = spanPrefix && originalText.indexOf(spanPrefix.outerHTML) !== 0 ? spanPrefix.outerHTML : "";
+    lista.innerHTML = ""; 
 
-    let currentValue = 0;
+    anuncios.forEach(a => {
+        const bloco = `
+            <div class="card">
+                <img src="${a.imagens}" class="img">
+                <h2>${a.nome_do_anuncio}</h2>
+                <p>${a.localizacao}</p>
+                <span>Valor: R$ ${a.valor}</span>
+            </div>
+        `;
 
-    const updateCounter = () => {
-      currentValue += Math.ceil(finalValue / speed);
-      if (currentValue >= finalValue) {
-        counter.innerHTML = `${prefix}${finalValue}${suffix}`;
-      } else {
-        counter.innerHTML = `${prefix}${currentValue}${suffix}`;
-        requestAnimationFrame(updateCounter);
-      }
-    };
+        lista.innerHTML += bloco;
+    });
+}
 
-    updateCounter();
-  });
-});
+updateAnnouncement();
