@@ -1,0 +1,205 @@
+
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Galano Grotesque Alt';
+}
+
+.a-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 100px;
+}
+
+.logo-cabecalho{
+  width: 60px;
+}
+
+.primeiro-sobre-nos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.h1-primeiro-sobre-nos{
+  font-size: 80px;
+}
+
+.azul{
+  color: #0D4B9D;
+}
+
+.ciano{
+  color: #0296B2;
+}
+
+.marrom{
+  color: #8D6049;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.imagem-container{
+  height: 700px;
+  border-radius: 50px;
+  margin: 0 100px;
+  background-image: url(/front-end/img/duas-lindas-garotas-em-maios-na-piscina.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.segundo-sobre-nos{
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.p-segundo-sobre-nos{
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 60%;
+}
+
+.terceiro-sobre-nos{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  gap: 20px;
+}
+
+.h1-terceiro-sobre-nos{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.quarto-sobre-nos{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-terceiro-sobre-nos{
+  font-size: 20px;
+  max-width: 50%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.cards-sobre-nos-container{
+  margin-left: -20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 30px;
+  column-gap: 50px;
+}
+
+.icones{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icones p{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.img-icones{
+  width: 120px;
+}
+
+.quinto-sobre-nos{
+  padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.p-quinto-sobre-nos{
+  text-align: start;
+  font-size: 20px;
+  max-width: 60%;
+}
+
+.rodape-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px 100px;
+    background-color: #F5F5F5;
+}
+
+.logo-rodape{
+    margin-bottom: 50px;
+    margin-left: -15px;
+    width: 220px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.icones-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.h1-redes-sociais{
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.icone-rede{
+    border-radius: 50%;
+    padding: 5px;
+    width: 36px;
+    background-color: #000000;
+}
+
+.rodape-ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 8px;
+    list-style-type: none;
+}
+
+.rodape-li{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rodape-li:hover{
+    text-decoration: underline;
+}

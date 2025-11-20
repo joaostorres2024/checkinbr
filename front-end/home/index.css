@@ -484,7 +484,7 @@
 .rodape-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 100px;
+    padding: 70px 100px;
     background-color: #F5F5F5;
 }
 
