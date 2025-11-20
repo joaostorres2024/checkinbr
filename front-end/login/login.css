@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Galano Grotesque Alt';
+}
+
+.a-link{
+  max-width: min-content;
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo{
+  width: 200px;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+  height: 100vh;
+  gap: 10px;
+}
+
+.aviso-container{
+  background-color: #C4E3E9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 55vw;
+}
+
+.inputs{
+  color: #000000;
+  width: 350px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: #ECECEC;
+}
+
+.inputs:focus{
+  border: 1px solid #0296B2;
+}
+
+.botao-validar{
+  cursor: pointer;
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  font-size: 20px;
+  background-color: #0296B2;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.botao-validar:hover{
+    background-color: #007b93;
+    transition: 0.3s ease;
+}
+
+.botao-validar:not(:hover){
+    transition: 0.3s ease;
+}
+
+.aviso{
+  border-radius: 30px;
+  width: 450px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.h1-aviso{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.p-aviso{
+  font-size: 16px;
+}
+
+.bold{
+  font-weight: 800;
+}
+
+.voltar{
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.voltar:hover{
+  text-decoration: underline;
+}
