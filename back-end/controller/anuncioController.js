@@ -44,4 +44,12 @@ class AnuncioController {
     }
 }
 
+class AnuncioController {
+    static deletar(id, callback) {
+        const sql = "DELETE FROM anuncios WHERE id = ?";
+        db.query(sql, [id], callback);
+    }
+}
+
+
 module.exports = AnuncioController;

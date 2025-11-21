@@ -19,11 +19,7 @@
 
 .cabecalho-container{
     background-color: #0296B2;
-    padding: 5px 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    padding: 15px 50px;
 }
 
 .pesquisa-menu-container{
@@ -31,11 +27,6 @@
     flex-direction: column;
     gap: 5px;
     padding: 50px 0;
-}
-
-.icone-voltar{
-    margin-top: 5px;
-    width: 30px;
 }
 
 .h1-checkinbr{
@@ -97,16 +88,6 @@
     padding: 5px;
 }
 
-.icones{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.botao-adicionar{
-    width: 100px;
-}
-
 #input-valor{
     width: 300px;
     padding: 5px;
@@ -140,7 +121,7 @@
     background-color: rgb(249, 79, 79);
 }
 
-.botao-aplicar{
+#botao-aplicar{
     padding: 5px;
     color: #FFFFFF;
     background-color: #0296B2;

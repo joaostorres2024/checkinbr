@@ -13,7 +13,7 @@
     color: inherit;
 }
 
-.cabecalho-container{
+.cabecalho-container{   
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 100px;
-    background-image: url(/front-end/img/MarinaFlatBG.jpg);
+    background-image: url(/img/MarinaFlatBG.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -333,7 +333,7 @@
 .explorar-container{
     width: 100%;
     height: 800px;
-    background-image: url(/front-end/img/ExplorarBG.jpg);
+    background-image: url(/img/ExplorarBG.jpg);
     padding: 0px 100px;
     display: flex;
     flex-direction: column;

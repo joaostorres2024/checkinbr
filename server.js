@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "front-end")));
 
-const anuncioRoutes = require("./checkinbr/back-end/routes/anuncioRoutes");
+const anuncioRoutes = require("./back-end/routes/anuncioRoutes");
 app.use(anuncioRoutes);
 
 app.get("/", (req, res) => {

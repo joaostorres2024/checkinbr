@@ -9,10 +9,10 @@ async function updateAnnouncement() {
     anuncios.forEach(a => {
         const bloco = `
             <div class="card">
-                <img src="${a.imagens}" class="img">
-                <h2>${a.nome_do_anuncio}</h2>
-                <p>${a.localizacao}</p>
-                <span>Valor: R$ ${a.valor}</span>
+                <img src="${a.imagens}" id = "imagem-card" class="img">
+                <h2 id = "h2-card">${a.nome}</h2>
+                <p id = "p-card">${a.localizacao}</p>
+                <span id = "span-card">Valor: R$ ${a.valor}</span>
             </div>
         `;
 

@@ -25,6 +25,15 @@ router.post("/criar-anuncio", (req, res) => {
     });
 });
 
+router.delete("/deletar-anuncio/:id", (req, res) => {
+    const id = req.params.id;
+
+    AnuncioController.deletar(id, (err, result) => {
+        if (err) return res.status(500).json({ erro: err.message });
+        res.json({ sucesso: true });
+    });
+});
+
 router.get("/api/anuncios", (req, res) => {
     AnuncioController.listar((err, anuncios) => {
         if (err) return res.status(500).json(err);
