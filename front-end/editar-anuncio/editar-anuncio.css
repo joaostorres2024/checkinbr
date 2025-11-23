@@ -38,3 +38,51 @@
     font-size: 16px;
     color: #FFFFFF;
 }
+
+.anuncios-container{
+    padding: 50px 100px;
+}
+
+.h1-anuncios{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.anuncios-editar-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    border-radius: 10px;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+#imagem-card{
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#h2-card{
+    font-size: 30px;
+}
+
+#p-card{
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+#span-card{
+    font-size: 24px;
+}
