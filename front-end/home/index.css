@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Galano Grotesque Alt';
+    font-family: 'Galano Grotesque';
 }
 
 .a-link{
@@ -241,7 +241,65 @@
 }
 
 .hospedagens-container{
-    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.anuncios-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo-hospedagens-container{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.h1-hospedagens{
+    font-size: 36px;
+    font-weight: 600;
+    padding: 50px 0;
+}
+
+.card{
+    border-radius: 20px;
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 1px 5px 20px -8px rgba(0,0,0,0.3);
+}
+
+#imagem-card{
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#h2-card{
+    font-size: 30px;
+}
+
+#p-card{
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+#span-card{
+    font-size: 24px;
 }
 
 .avaliacoes-container{
@@ -264,7 +322,7 @@
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .cards-avaliacoes-container{

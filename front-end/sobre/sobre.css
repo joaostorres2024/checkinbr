@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Galano Grotesque Alt';
+    font-family: 'Galano Grotesque';
 }
 
 .a-link{
@@ -56,7 +56,7 @@
   height: 700px;
   border-radius: 50px;
   margin: 0 100px;
-  background-image: url(/front-end/img/duas-lindas-garotas-em-maios-na-piscina.jpg);
+  background-image: url(/img/duas-lindas-garotas-em-maios-na-piscina.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
