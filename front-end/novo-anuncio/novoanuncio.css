@@ -15,7 +15,11 @@
 
 .cabecalho-container{
     background-color: #0296B2;
-    padding: 15px 50px;
+    padding: 5px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .pesquisa-menu-container{
@@ -23,6 +27,11 @@
     flex-direction: column;
     gap: 5px;
     padding: 50px 0;
+}
+
+.icone-voltar{
+    margin-top: 5px;
+    width: 30px;
 }
 
 .h1-checkinbr{
@@ -37,17 +46,90 @@
     padding: 50px 50px;
 }
 
-.adcionar-fotos{
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.h1-novo-anuncio{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.fotos{
-    height: 90px;
-    background-color: #cacaca;
+.adicionar-fotos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+    
+#foto1 {
+    height: 320px;
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+}
+
+#foto2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+#foto3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 6;
+}
+
+#foto4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+#foto5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+#foto6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 5;
+}
+
+#foto7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+#foto8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+
+#foto9 {
+    grid-column-start: 7;
+    grid-row-start: 5;
+}
+
+#foto10 {
+    grid-column-start: 7;
+    grid-row-start: 6;
+}       
+
+.fotos {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #cbcbcb;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .adicionar-link-imagem{
@@ -56,62 +138,117 @@
     flex-direction: column;
 }
 
-#adicionar-fotos-link{
+.input-imagem:focus {
+  border-bottom: 2px solid #0296B2;
+  transition: 0.3s ease;
+}
+
+.input-imagem{
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
     width: 500px;
-    padding: 5px;
+    padding: 10px;
+    transition: 0.3s ease;
 }
 
 #input-nome-do-anuncio{
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
     width: 300px;
-    padding: 5px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+#input-nome-do-anuncio:focus {
+  border-bottom: 2px solid #0296B2;
+  transition: 0.3s ease;
 }
 
 #input-localizacao-escrito{
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
     width: 400px;
-    padding: 5px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+#input-localizacao-escrito:focus {
+  border-bottom: 2px solid #0296B2;
+  transition: 0.3s ease;
 }
 
 #input-estrelas-avaliacao{
-    width: 300px;
-    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    width: 200px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+#input-estrelas-avaliacao:focus {
+  border-bottom: 2px solid #0296B2;
+  transition: 0.3s ease;
 }
 
 #input-descricao-curta{
     resize: none;
     width: 500px;
     height: 100px;
-    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+#input-descricao-curta:focus {
+  border-bottom: 2px solid #0296B2;
+  transition: 0.3s ease;
 }
 
 #input-descricao-livre{
-    resize: none;
+   resize: none;
     width: 500px;
     height: 200px;
-    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 10px;
+    transition: 0.3s ease;
 }
+
+#input-descricao-livre:focus {
+  border-bottom: 2px solid #0296B2;
+  transition: 0.3s ease;
+}
+
 
 #input-icones{
     width: 300px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #input-valor{
     width: 300px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #input-localizacao-link{
     width: 400px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #input-calendario{
     width: 300px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #botao-bloquear-datas{
-    padding: 5px;
+    padding: 10px;
     color: #FFFFFF;
     background-color: rgb(249, 79, 79);
 }

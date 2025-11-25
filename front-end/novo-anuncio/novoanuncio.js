@@ -31,3 +31,34 @@ document.getElementById("submit").addEventListener("click", async (e) => {
         alert("Erro de conexão com o servidor.");
     }
 });
+
+const fotos = document.querySelectorAll('.fotos');
+const containerInputs = document.querySelector('.adicionar-link-imagem');
+
+let fotoIndex = 0;
+
+function criarInput() {
+    const novoInput = document.createElement('input');
+    novoInput.type = "text";
+    novoInput.placeholder = "Link de imagem";
+    novoInput.classList.add("input-imagem");
+
+    novoInput.addEventListener('change', () => handleImagem(novoInput));
+
+    containerInputs.appendChild(novoInput);
+}
+
+function handleImagem(input) {
+    const url = input.value.trim();
+    if (!url) return;
+
+    if (fotoIndex < fotos.length) {
+        fotos[fotoIndex].style.backgroundImage = `url('${url}')`;
+        fotoIndex++;
+    }
+
+    criarInput();
+}
+
+document.querySelector('.input-imagem')
+        .addEventListener('change', (e) => handleImagem(e.target));
