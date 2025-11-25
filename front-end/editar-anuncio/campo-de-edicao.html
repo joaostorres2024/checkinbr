@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/novo-anuncio/novoanuncio.css">
+  <title>Editar Anúncio - CheckinBR</title>
+</head>
+<body>
+  <header>
+    <section class="cabecalho">
+      <div class="cabecalho-container">
+        <a class="a-link" href="/admin/admin.html">
+          <h1 class="h1-checkinbr">CheckinBR Administrator Manager</h1>
+        </a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="novo-anuncio">
+      <div class="novo-anuncio-container">
+
+        <input name="imagens" id="adicionar-fotos-botao" type="text"placeholder="add imagem"></button>
+        <input name="nome_do_anuncio" id="input-nome-do-anuncio" type="text" placeholder="Nome do anúncio">
+        <input name="localizacao" id="input-localizacao-escrito" type="text" placeholder="Localização por escrito">
+        <input name="estrelas" id="input-estrelas-avaliacao" type="number" placeholder="Estrelas de avaliação">
+        <textarea name="descricao_rapida" id="input-descricao-curta" placeholder="Descrição curta"></textarea>
+        <textarea name="descricao_detalhada" id="input-descricao-livre" placeholder="Descrição livre"></textarea>
+        <input name="valor" id="input-valor" type="number" placeholder="Valor por noite">
+        <input id="input-localizacao-link" type="text" placeholder="Localização (Link)">
+        <input name="localizacao_link" id="input-calendario" type="date">
+
+        <div>
+          <button id="botao-bloquear-datas">Bloquear data</button>
+          <button id="botao-desbloquear-datas">Desbloquear data</button>
+        </div>
+        <div>
+          <button id="botao-voltar">Voltar</button>
+          <button id="submit">Aplicar Alterações</button>
+          <button id="botao-sair">Sair</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="campo-de-edicao.js"></script>
+</body>
+</html>

@@ -1,55 +1,56 @@
-async function updateAnnouncement() {
-    const response = await fetch("/api/anuncios");
-    const anuncios = await response.json();
+document.addEventListener("DOMContentLoaded", () => {
+    carregarAnuncios();
+});
 
-    const lista = document.getElementById("bdInformations");
+async function carregarAnuncios() {
+    const resposta = await fetch("/api/anuncios"); 
+    const anuncios = await resposta.json();
 
-    lista.innerHTML = ""; 
+    const container = document.getElementById("bdInformations");
+    container.innerHTML = "";
 
-    anuncios.forEach(a => {
-        const bloco = `
+    anuncios.forEach(anuncio => {
+        const div = document.createElement("div");
+        div.classList.add("anuncio-item");
+
+        div.innerHTML = `
             <div class="card">
-                <img src="${a.imagens}" id = "imagem-card" class="img">
-                <h2 id = "h2-card">${a.nome}</h2>
-                <p id = "p-card">${a.localizacao}</p>
-                <span id = "span-card">Valor: R$ ${a.valor}</span>
+                <img src="${anuncio.imagens}" class="img">
+                <h2>${anuncio.nome}</h2>
+                <p>ID: ${anuncio.id_anuncio}</p>
+                <p>${anuncio.localizacao}</p>
+                <span>Valor: R$ ${anuncio.valor}</span>
+
+                <button onclick = "deletarAnuncio(${anuncio.id_anuncio})" class="btn-deletar">
+                    Deletar
+                </button>
             </div>
         `;
 
-        lista.innerHTML += bloco;
-    });
-}
-
-updateAnnouncement();
-
-async function carregarAnuncios() {
-    const res = await fetch("/api/anuncios"); // sua rota de listar
-    const anuncios = await res.json();
-    
-    const container = document.getElementById("lista-anuncios");
-    container.innerHTML = ""; // limpar
-
-    anuncios.forEach(a => {
-        const div = document.createElement("div");
-        div.innerHTML = `
-            <strong>${a.nome_do_anuncio}</strong>
-            <button onclick="deletarAnuncio(${a.id})">Deletar</button>
-        `;
         container.appendChild(div);
     });
+
+    console.log("ANUNCIOS:", anuncios);
 }
 
 async function deletarAnuncio(id) {
-    const confirmar = confirm("Tem certeza que quer deletar?");
-    if (!confirmar) return;
+    console.log("ID recebido:", id);
+    if (!confirm("Deseja realmente deletar este anúncio?")) return;
 
-    const res = await fetch(`/deletar-anuncio/${id}`, {
+    const resposta = await fetch(`/api/anuncios/deletar/${id}`, { 
         method: "DELETE"
     });
-    const data = await res.json();
-    console.log(data);
 
-    carregarAnuncios(); // atualizar lista
+    if (!resposta.ok) {
+        const erro = await resposta.json();
+        throw new Error(erro.erro || "Erro desconhecido");
+    }
+
+    const data = await resposta.json();
+
+    alert(data.sucesso ? "Anúncio deletado!" : "Erro ao deletar");
+
+    carregarAnuncios();
+    console.log(err, "Erro ao deletar" + err.message);
 }
 
-carregarAnuncios();

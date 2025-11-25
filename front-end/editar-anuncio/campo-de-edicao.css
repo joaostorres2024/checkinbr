@@ -50,17 +50,6 @@
     background-color: #cacaca;
 }
 
-.adicionar-link-imagem{
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-#adicionar-fotos-link{
-    width: 500px;
-    padding: 5px;
-}
-
 #input-nome-do-anuncio{
     width: 300px;
     padding: 5px;

@@ -14,7 +14,7 @@ document.getElementById("submit").addEventListener("click", async (e) => {
     };
 
     try {
-        const res = await fetch("/criar-anuncio", {
+        const res = await fetch("/api/anuncios/criar-anuncio", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)

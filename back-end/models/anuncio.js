@@ -1,6 +1,6 @@
-class anuncio {
-    constructor(id, imagens, nome, localizacao, estrelas, descricaoRapida, descricaoDetalhada, valor, localizacaoLink) {
-        this.id = id;
+class Anuncio {
+    constructor(id_anuncio, imagens, nome, localizacao, estrelas, descricaoRapida, descricaoDetalhada, valor, localizacaoLink) {
+        this.id_anuncio = id_anuncio;
         this.imagens = imagens;
         this.nome = nome;
         this.localizacao = localizacao;
@@ -12,4 +12,4 @@ class anuncio {
     }
 }
 
-module.exports = anuncio;
+module.exports = Anuncio;

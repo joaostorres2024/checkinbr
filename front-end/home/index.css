@@ -50,7 +50,7 @@
     background-color: #000000;
     font-weight: 500;
     font-size: 16px;
-    cursor: pointer;
+    cursor: not-allowed;
     border: none;
     height: 34px;
     width: 100px;
@@ -242,9 +242,10 @@
 
 .hospedagens-container{
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 100px;
+    padding: 100px 100px;
 }
 
 .anuncios-container{
@@ -274,7 +275,7 @@
     gap: 10px;
     padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #FFFFFF;
     box-shadow: 1px 5px 20px -8px rgba(0,0,0,0.3);
 }
@@ -290,16 +291,52 @@
 }
 
 #h2-card{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 #p-card{
-    margin-top: -10px;
+    color: #797979;
+    margin-top: -5px;
     font-size: 18px;
 }
 
+.valor-botao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.localizacao-loc{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pin{
+    margin-top: -5px;
+    width: 20px;
+}
+
+#botao-direita{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0296B2;
+    height: 40px;
+    width: 40px;
+}
+
 #span-card{
+    font-weight: 600;
     font-size: 24px;
+}
+
+#icone-direita{
+    width: 30px;
 }
 
 .avaliacoes-container{
@@ -468,7 +505,8 @@
     margin-top: 10px;
     width: 200px;
     font-size: 22px;
-    background-color: #60d669;
+    background: linear-gradient(to right, #60d669, #3bb84f);
+    background-size: 200% 100%;
     border-radius: 50px;
     color: #FFFFFF;
     font-weight: 600;
@@ -487,12 +525,30 @@
     width: 200px;
     font-size: 22px;
     background: linear-gradient(to right, #c837ab, #60f);
+    background-size: 200% 100%;
     border-radius: 50px;
     color: #FFFFFF;
     font-weight: 600;
     padding: 7px 0;
     border: none;
     cursor: pointer;
+}
+
+.botao-instagram:hover{
+    animation: igBack 1s ease-in-out infinite alternate;
+}
+
+.botao-whatsapp:hover{
+    animation: igBack 1s ease-in-out infinite alternate;
+}
+
+@keyframes igBack {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .icone-contatos{

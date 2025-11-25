@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "front-end")));
 
 const anuncioRoutes = require("./back-end/routes/anuncioRoutes");
-app.use(anuncioRoutes);
+app.use("/api/anuncios", anuncioRoutes);
 
 app.get("/", (req, res) => {
     res.redirect("/home/index.html");
