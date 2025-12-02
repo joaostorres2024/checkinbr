@@ -3,14 +3,13 @@ document.getElementById("submit").addEventListener("click", async (e) => {
 
     // Pegando os valores do seu HTML
     const data = {
-        imagens: document.getElementById("adicionar-fotos-botao").value, // você vai mudar depois para pegar várias imagens
+        imagens: document.getElementById("input-imagem").value, 
         nome_do_anuncio: document.getElementById("input-nome-do-anuncio").value,
         localizacao: document.getElementById("input-localizacao-escrito").value,
         estrelas: document.getElementById("input-estrelas-avaliacao").value,
         descricao_rapida: document.getElementById("input-descricao-curta").value,
         descricao_detalhada: document.getElementById("input-descricao-livre").value,
         valor: document.getElementById("input-valor").value,
-        localizacao_link: document.getElementById("input-calendario").value
     };
 
     try {

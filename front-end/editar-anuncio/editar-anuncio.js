@@ -19,8 +19,10 @@ async function carregarAnuncios() {
                 <div>                    
                     <h2 class="h2-card">${anuncio.nome}</h2>
                     <p class="p-card">${anuncio.localizacao}</p>
-                    <span class="span-card">Valor: R$ ${anuncio.valor}</span>
-                    <button onclick="redirecionarParaEdicao(${anuncio.id_anuncio})" class="btn-editar">Editar</button>
+                    <div class="preco-botao">
+                      <span class="span-card">R$ ${anuncio.valor}</span>
+                      <button onclick="redirecionarParaEdicao(${anuncio.id_anuncio})" class="btn-editar">Editar</button>
+                    </div>
                 </div>
             </div>
         `;

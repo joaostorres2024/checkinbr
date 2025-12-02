@@ -15,15 +15,17 @@ async function carregarAnuncios() {
 
         div.innerHTML = `
             <div class="card">
-                <img src="${anuncio.imagens}" class="img">
-                <h2>${anuncio.nome}</h2>
-                <p>ID: ${anuncio.id_anuncio}</p>
-                <p>${anuncio.localizacao}</p>
-                <span>Valor: R$ ${anuncio.valor}</span>
-
-                <button onclick = "deletarAnuncio(${anuncio.id_anuncio})" class="btn-deletar">
+                <img src="${anuncio.imagens}" class="img-card">
+                <div>                    
+                    <h2 class="h2-card">${anuncio.nome}</h2>
+                    <p class="p-card">${anuncio.localizacao}</p>
+                    <div class="preco-botao">
+                      <span class="span-card">R$ ${anuncio.valor}</span>
+                      <button onclick = "deletarAnuncio(${anuncio.id_anuncio})" class="btn-deletar">
                     Deletar
                 </button>
+                    </div>
+                </div>
             </div>
         `;
 

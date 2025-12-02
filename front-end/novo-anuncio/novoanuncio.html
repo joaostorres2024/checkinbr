@@ -34,18 +34,22 @@
     
 
                 <div class="adicionar-link-imagem">
-                    <input name="imagens" class="input-imagem" type="text" placeholder="Link de imagem">
+                    <input name="imagens" id="input-imagem" class="input-imagem" type="text" placeholder="Link de imagem">
                 </div>
-                <input name="nome_do_anuncio" id="input-nome-do-anuncio" type="text" placeholder="Nome do anúncio">
-                <input name="localizacao" id="input-localizacao-escrito" type="text" placeholder="Localização por escrito">
-                <input name="localizacao" id="input-localizacao-escrito" type="text" placeholder="Localização por link">
-                <input name="estrelas" id="input-estrelas-avaliacao" type="number"  id="" placeholder="Estrelas de avaliação">
-                <textarea name="descricao_rapida" id="input-descricao-curta"  id="" placeholder="Descrição curta"></textarea>
-                <textarea name="descricao_detalhada" id="input-descricao-livre" id="" placeholder="Descrição livre"></textarea>
+                <div class="area1">
+                    <input name="nome_do_anuncio" id="input-nome-do-anuncio" type="text" placeholder="Nome do anúncio">
+                    <input name="localizacao" id="input-localizacao-escrito" type="text" placeholder="Localização por escrito">
+                    <input name="localizacao" id="input-localizacao-escrito" type="text" placeholder="Localização por link">
+                    <input name="estrelas" id="input-estrelas-avaliacao" type="number"  id="" placeholder="Estrelas de avaliação">
+                    <input name="valor" id="input-valor" type="number"  id="" placeholder="Valor por noite">
+                </div>
+                <div class="area2">
+                    <textarea name="descricao_rapida" id="input-descricao-curta"  id="" placeholder="Descrição curta"></textarea>
+                    <textarea name="descricao_detalhada" id="input-descricao-livre" id="" placeholder="Descrição livre"></textarea>
+                </div>
                 <div>
-                    <button id="botao-voltar">Voltar</button>
-                    <button id="submit">Aplicar</button>
-                    <button id="botao-sair">Sair</button>
+                    <a class="a-link" href="/admin/admin.html"><button id="botao-voltar">Voltar</button></a>
+                    <button class="botao-criar" id="submit">Criar Anúncio</button>
                 </div>
             </div>
         </section>

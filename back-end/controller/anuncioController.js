@@ -96,10 +96,10 @@ class AnuncioController {
         anuncio.nome,
         anuncio.localizacao,
         anuncio.estrelas,
-        anuncio.descricaoRapida,
-        anuncio.descricaoDetalhada,
+        anuncio.descricao_rapida,
+        anuncio.descricao_detalhada,
         anuncio.valor,
-        anuncio.localizacaoLink,
+        anuncio.localizacao_link,
         id
     ];
 

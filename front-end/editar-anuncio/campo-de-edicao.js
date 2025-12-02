@@ -18,11 +18,10 @@ console.log(id);
     document.getElementById("input-nome-do-anuncio").value = anuncio.nome; 
     document.getElementById("input-localizacao-escrito").value = anuncio.localizacao;
     document.getElementById("input-estrelas-avaliacao").value = anuncio.estrelas;
-    document.getElementById("input-descricao-curta").value = anuncio.descricaoRapida; 
-    document.getElementById("input-descricao-livre").value = anuncio.descricaoDetalhada; 
+    document.getElementById("input-descricao-curta").value = anuncio.descricao_rapida; 
+    document.getElementById("input-descricao-livre").value = anuncio.descricao_detalhada; 
     document.getElementById("input-valor").value = anuncio.valor;
-    document.getElementById("input-localizacao-link").value = anuncio.localizacaoLink; 
-    document.getElementById("input-calendario").value = anuncio.data || ""; 
+    document.getElementById("input-localizacao-link").value = anuncio.localizacao_link; 
 
     // Enviar alterações
     document.getElementById("submit").addEventListener("click", async (e) => {

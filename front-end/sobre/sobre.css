@@ -92,7 +92,7 @@
 .quarto-sobre-nos{
   margin-left: auto;
   margin-right: auto;
-  padding: 100px;
+  padding: 100px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,13 +135,13 @@
 }
 
 .quinto-sobre-nos{
-  padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    background-color: #000000;
-    color: #FFFFFF;
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 .p-quinto-sobre-nos{
