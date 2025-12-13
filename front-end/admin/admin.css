@@ -13,14 +13,31 @@
     color: #000000;
 }
 
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
 .menu-container{
     gap: 20px;
-    padding: 30px;
+    padding: 50px 30px;
     flex-direction: column;
     display: flex;
-    background-color: #141b2a;
-    width: 400px;
+    background-color: #0d1220;
+    width: 25vw;
     height: 100vh;
+}
+
+.card-menu{
+    padding: 3px 0;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icone-menu{
+    width: 24px;
 }
 
 .logo-container{
@@ -35,20 +52,66 @@
 }
 
 .h1-checkinbr-manager{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #FFFFFF;
 }
 
 .procurar-input{
-    height: 50px;
+    height: 40px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0 10px;
     color: #FFFFFF;
-    background-color: #141b2a;
+    background-color: #1a2236;
+    border: 2px solid #26304a;
+}
+
+.procurar-input::placeholder{
+    color: #FFFFFF;
+}
+
+.procurar-input:focus{
+    outline: none;
+    border-color: #384974;
 }
 
 .titulo-menu{
+    font-size: 18px;
     color: #FFFFFF;
+}
+
+.card-menu:hover{
+    background-color: #26304a;
+}
+
+.nav-container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.homespace-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+}
+
+.imagem{
+    width: 250px;
+}
+
+.p1-homespace{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #384974;
+}
+
+.p2-homespace{
+    font-size: 20px;
+    color: #384974;
 }

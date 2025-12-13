@@ -1,9 +1,12 @@
-document.getElementById("submit").addEventListener("click", async (e) => {
-    e.preventDefault(); // evita que a página recarregue
+const fotos = document.querySelectorAll('.fotos');
+const containerInputs = document.querySelector('.adicionar-link-imagem');
+const btnAddImagem = document.getElementById('btn-add-imagem');
 
-    // Pegando os valores do seu HTML
+document.getElementById("submit").addEventListener("click", async (e) => {
+    e.preventDefault();
+
     const data = {
-        imagens: document.getElementById("input-imagem").value, 
+        imagens: JSON.stringify(imagens),
         nome_do_anuncio: document.getElementById("input-nome-do-anuncio").value,
         localizacao: document.getElementById("input-localizacao-escrito").value,
         estrelas: document.getElementById("input-estrelas-avaliacao").value,
@@ -31,33 +34,49 @@ document.getElementById("submit").addEventListener("click", async (e) => {
     }
 });
 
-const fotos = document.querySelectorAll('.fotos');
-const containerInputs = document.querySelector('.adicionar-link-imagem');
-
 let fotoIndex = 0;
+let imagens = [];
 
-function criarInput() {
-    const novoInput = document.createElement('input');
-    novoInput.type = "text";
-    novoInput.placeholder = "Link de imagem";
-    novoInput.classList.add("input-imagem");
+btnAddImagem.addEventListener('click', () => {
+    if (fotoIndex >= fotos.length) return alert("Limite de imagens atingido");
 
-    novoInput.addEventListener('change', () => handleImagem(novoInput));
+    const input = document.createElement('input');
+    input.type = "file";
+    input.accept = "image/*";
+    input.style.display = "none";
 
-    containerInputs.appendChild(novoInput);
-}
+    input.addEventListener('change', () => {
+        const file = input.files[0];
+        if (!file) return;
 
-function handleImagem(input) {
-    const url = input.value.trim();
-    if (!url) return;
+        const indexAtual = fotoIndex;
 
-    if (fotoIndex < fotos.length) {
-        fotos[fotoIndex].style.backgroundImage = `url('${url}')`;
-        fotoIndex++;
-    }
+        const reader = new FileReader();
+        reader.onload = () => {
+            const foto = fotos[indexAtual];
+            foto.style.backgroundImage = `url('${reader.result}')`;
 
-    criarInput();
-}
+            // 🔴 BOTÃO EXCLUIR DENTRO DO GRID
+            const btnExcluir = document.createElement('span');
+            btnExcluir.innerText = "Excluir";
+            btnExcluir.classList.add('btn-excluir');
 
-document.querySelector('.input-imagem')
-        .addEventListener('change', (e) => handleImagem(e.target));
+            btnExcluir.addEventListener('click', () => {
+                foto.style.backgroundImage = '';
+                btnExcluir.remove();
+                imagens.splice(indexAtual, 1);
+                fotoIndex--;
+            });
+
+            foto.appendChild(btnExcluir);
+
+            imagens.push(file);
+            fotoIndex++;
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+    containerInputs.appendChild(input);
+    input.click();
+});

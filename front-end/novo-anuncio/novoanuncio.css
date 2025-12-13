@@ -13,12 +13,89 @@
     color: #000000;
 }
 
-.cabecalho-container{
-    background-color: #0296B2;
-    padding: 5px 50px;
+.novo-anuncio{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    gap: 20px;
+    padding: 50px 30px;
+    flex-direction: column;
+    display: flex;
+    background-color: #0d1220;
+    width: 25vw;
+    height: 100vh;
+}
+
+.card-menu{
+    padding: 3px 0;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.icone-menu{
+    width: 24px;
+}
+
+.logo-container{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-branca{
+    width: 34px;
+}
+
+.h1-checkinbr-manager{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.procurar-input{
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    background-color: #1a2236;
+    border: 2px solid #26304a;
+}
+
+.procurar-input::placeholder{
+    color: #FFFFFF;
+}
+
+.procurar-input:focus{
+    outline: none;
+    border-color: #384974;
+}
+
+.titulo-menu{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.card-menu:hover{
+    background-color: #26304a;
+}
+
+.nav-container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -40,19 +117,22 @@
 }
 
 .novo-anuncio-container{
+    margin-left: 25vw;
+    width: 75vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 50px;
 }
 
 .h1-novo-anuncio{
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .adicionar-fotos {
+    padding: 20px 50px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -60,7 +140,7 @@
 }
     
 #foto1 {
-    height: 350px;
+    height: 270px;
     grid-column: span 3 / span 3;
     grid-row: span 4 / span 4;
 }
@@ -145,29 +225,68 @@
     grid-template-rows: 200px;
 }
 
-.adicionar-link-imagem{
-    gap: 10px;
+.adicionar-link-imagem {
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.input-imagem:focus {
-    background-color: #FFFFFF;
-  border-bottom: 2px solid #0296B2;
-  transition: 0.3s ease;
+.adicionar-link-imagem input {
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
 }
 
-.input-imagem{
+#btn-add-imagem {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1a2236;
+    color: #fff;
     border: none;
-    border-bottom: 2px solid #ccc;
-    background-color: #f0f0f0;
-    outline: none;
-    width: 500px;
-    padding: 10px;
-    transition: 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#input-nome-do-anuncio{
+#btn-add-imagem:hover {
+    background-color: #26304a;
+}
+
+.fotos {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-excluir {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.btn-excluir:hover {
+    background: red;
+}
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 50px;
+}
+
+.inputs{
+    height: 40px;
+    padding: 0 10px;
     border: none;
     background-color: #eeeeee;
     border-bottom: 2px solid #ccc;
@@ -176,103 +295,53 @@
     transition: 0.3s ease;
 }
 
-#input-nome-do-anuncio:focus {
-    background-color: #FFFFFF;
+.inputs:focus{
+     background-color: #FFFFFF;
   border-bottom: 2px solid #0296B2;
   transition: 0.3s ease;
 }
 
-#input-localizacao-escrito{
-    border: none;
-    background-color: #eeeeee;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    padding: 10px;
-    transition: 0.3s ease;
-}
-
-#input-localizacao-escrito:focus {
-    background-color: #FFFFFF;
-  border-bottom: 2px solid #0296B2;
-  transition: 0.3s ease;
-}
-
-#input-estrelas-avaliacao{
-    border: none;
-    background-color: #eeeeee;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    padding: 10px;
-    transition: 0.3s ease;
-}
-
-#input-estrelas-avaliacao:focus {
-    background-color: #FFFFFF;
-  border-bottom: 2px solid #0296B2;
-  transition: 0.3s ease;
+.area2{
+    padding:0px 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
 }
 
 #input-descricao-curta{
-    resize: none;
     border: none;
     background-color: #eeeeee;
     border-bottom: 2px solid #ccc;
     outline: none;
     padding: 10px;
     transition: 0.3s ease;
-}
-
-#input-descricao-curta:focus {
-    background-color: #FFFFFF;
-  border-bottom: 2px solid #0296B2;
-  transition: 0.3s ease;
+    resize: none;
 }
 
 #input-descricao-livre{
-   resize: none;
     border: none;
     background-color: #eeeeee;
     border-bottom: 2px solid #ccc;
     outline: none;
     padding: 10px;
     transition: 0.3s ease;
+    resize: none;
 }
 
-#input-descricao-livre:focus {
+#input-descricao-curta:focus{
     background-color: #FFFFFF;
   border-bottom: 2px solid #0296B2;
   transition: 0.3s ease;
 }
 
-
-#input-icones{
-    width: 300px;
-    padding: 10px;
-}
-
-#input-valor{
-    border: none;
-    background-color: #eeeeee;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    padding: 10px;
-    transition: 0.3s ease;
-}
-
-#input-valor:focus {
+#input-descricao-livre:focus{
     background-color: #FFFFFF;
   border-bottom: 2px solid #0296B2;
   transition: 0.3s ease;
 }
 
-#input-localizacao-link{
-    width: 400px;
-    padding: 10px;
-}
-
-#input-calendario{
-    width: 300px;
-    padding: 10px;
+.area3{
+    padding: 0 50px;
+    margin-bottom: 50px;
 }
 
 #botao-voltar{
@@ -306,4 +375,3 @@
 .botao-criar:hover{
     background-color: #0c7f96;
 }
-
