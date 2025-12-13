@@ -13,12 +13,85 @@
     color: #000000;
 }
 
-.cabecalho-container{
-    background-color: #0296B2;
-    padding: 5px 50px;
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    gap: 20px;
+    padding: 50px 30px;
+    flex-direction: column;
+    display: flex;
+    background-color: #0d1220;
+    width: 25vw;
+    height: 100vh;
+}
+
+.card-menu{
+    padding: 3px 0;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.icone-menu{
+    width: 24px;
+}
+
+.logo-container{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-branca{
+    width: 34px;
+}
+
+.h1-checkinbr-manager{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.procurar-input{
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    background-color: #1a2236;
+    border: 2px solid #26304a;
+}
+
+.procurar-input::placeholder{
+    color: #FFFFFF;
+}
+
+.procurar-input:focus{
+    outline: none;
+    border-color: #384974;
+}
+
+.titulo-menu{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.card-menu:hover{
+    background-color: #26304a;
+}
+
+.nav-container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -27,16 +100,6 @@
     flex-direction: column;
     gap: 5px;
     padding: 50px 0;
-}
-
-.icone-voltar{
-    margin-top: 5px;
-    width: 30px;
-}
-
-.h1-checkinbr{
-    font-size: 16px;
-    color: #FFFFFF;
 }
 
 .anuncios-container{
@@ -105,11 +168,25 @@
     border: none;
 }
 
-.cards-container{
+.h1-novo-anuncio{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.anuncio-container{
+    margin-left: 25vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 50px;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
 }
 
 .img-card{
